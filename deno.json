@@ -1,0 +1,12 @@
+{
+  "tasks": {
+  "dev": "deno run --watch --allow-all server.ts",
+  "generate:database": "psql -U postgres -f src/database/_database.sql"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1",
+    "hono": "npm:hono@^4.7.5",
+    "postgres": "https://deno.land/x/postgres@v0.19.3/mod.ts",
+    "bcrypt": "npm:bcrypt@^5.1.1"
+  }
+}
